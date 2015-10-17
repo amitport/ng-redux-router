@@ -10,7 +10,7 @@ ngRedux bindings for Angular-Route - Keep your router state inside your ngRedux 
 
 **Documentation is currently work in progress, see [the example here](https://github.com/amitport/ng-redux-router/tree/master/example).**
 
-Adapted from [ng-redux-router](https://github.com/neilff/ng-redux-router) by [Neil Fenton](https://github.com/neilff),
+Adapted from [redux-ui-router](https://github.com/neilff/redux-ui-router) by [Neil Fenton](https://github.com/neilff),
 which was in turn heavily inspired by [Redux React Router](https://github.com/acdlite/redux-react-router) by [Andrew Clark](https://github.com/acdlite)
 
 ## Table of Contents

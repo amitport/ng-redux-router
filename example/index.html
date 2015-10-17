@@ -2,10 +2,15 @@
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
     <link rel="stylesheet" href="./styles.css">
-    <title>ng-redux-ui-router</title>
+    <title>ng-redux-router</title>
   </head>
   <body>
-    <main ui-view="main"></main>
+    <main ng-controller="MainController">
+      <aside>
+        <pre>{{ globalState | json }}</pre>
+      </aside>
+      <ng-view></ng-view>
+    </main>
   </body>
   <script src="/static/bundle.js"></script>
 </html>

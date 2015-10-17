@@ -1,6 +1,5 @@
 {
-  "name": "angular-ui-router-redux",
-  "version": "0.1.0",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "start": "npm install; node server.js",
@@ -13,10 +12,9 @@
     "webpack": "1.9.11",
     "webpack-dev-server": "1.9.0"
   },
-  "license": "MIT",
   "dependencies": {
     "angular": "^1.4.6",
-    "angular-ui-router": "^0.2.15",
+    "angular-route": "^1.4.7",
     "ng-redux": "^3.0.0",
     "redux": "^3.0.0",
     "redux-logger": "1.0.4",

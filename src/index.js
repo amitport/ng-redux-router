@@ -1,27 +1,20 @@
 import angular from 'angular';
-import uiRouter from 'angular-ui-router';
-import routerState from './router-state-reducer';
-import stateGo from './state-go';
-import stateReload from './state-reload';
-import stateTransitionTo from './state-transition-to';
+import ngRoute from 'angular-route';
 
+import routeChangeActions from './route-change-actions';
 import routerMiddleware from './router-middleware';
-import uiRouterListener from './router-listener';
-import stateChangeActions from './state-change-actions';
+import routerListener from './router-listener';
+
+import routerStateReducer from './router-state-reducer';
+import setLocation from './set-location';
 
 export default angular
-  .module('ng-ui-router-middleware', [
-    uiRouter
-  ])
-  .provider('ngUiStateChangeActions', stateChangeActions)
-  .factory('ngUiRouterMiddleware', routerMiddleware)
-  .run(uiRouterListener)
+  .module('ng-redux-router', [ngRoute])
+  .factory('ngRouteChangeActions', routeChangeActions)
+  .factory('ngRouterMiddleware', routerMiddleware)
+  .run(routerListener)
   .name;
 
-export const router = routerState;
+export {routerStateReducer};
 
-export {
-  stateGo,
-  stateReload,
-  stateTransitionTo
-};
+export const routerActions = {setLocation};

@@ -1,7 +1,7 @@
 {
-  "name": "redux-ui-router",
-  "version": "0.4.0",
-  "description": "Redux middleware for use with Angular UI Router",
+  "name": "ng-redux-router",
+  "version": "0.0.0",
+  "description": "Redux middleware for use with Angular Router",
   "main": "./lib/index.js",
   "scripts": {
     "lint": "node node_modules/.bin/eslint src",
@@ -12,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/neilff/redux-ui-router"
+    "url": "https://github.com/amitport/ng-redux-router"
   },
-  "author": "Neil Fenton (neilff)",
+  "author": "Amit Portnoy (amitport)",
   "license": "ISC",
   "dependencies": {
     "babel": "5.8.21",
@@ -35,6 +35,6 @@
   },
   "peerDependencies": {
     "angular": "1.4.x",
-    "angular-ui-router": "^0.2.15"
+    "angular-route": "^1.4.7"
   }
 }

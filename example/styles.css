@@ -18,13 +18,9 @@ pre {
   color: white;
 }
 
-.mainView {
-  margin-left: 400px;
-  min-height: 100vh;
-}
-
 .child-view {
   background-color: white;
   padding: 15px;
   margin: 15px;
+  margin-left: 300px;
 }

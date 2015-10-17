@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/amitport/ng-redux-router"
   },
-  "author": "Amit Portnoy (amitport)",
+  "author": "Amit Portnoy <amit.portnoy@gmail.com> (https://github.com/amitport)",
   "license": "ISC",
   "dependencies": {
     "babel": "5.8.21",

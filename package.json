@@ -4,11 +4,9 @@
   "description": "Redux middleware for use with Angular Router",
   "main": "./lib/index.js",
   "scripts": {
-    "lint": "node node_modules/.bin/eslint src",
-    "clean": "rm -rf lib",
-    "test": "npm run lint; NODE_ENV=test node node_modules/.bin/mocha --compilers js:babel/register --recursive --require src/__tests__/index.js src/**/*.test.js",
-    "test:live": "npm run lint; NODE_ENV=test node node_modules/.bin/mocha --compilers js:babel/register --recursive --require src/__tests__/index.js -w src/**/*.test.js",
-    "build": "npm run clean; npm run test; node node_modules/.bin/babel src --out-dir lib"
+    "lint": "eslint ./src",
+    "clean": "rimraf lib",
+    "build": "npm run clean && npm run lint && babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -26,10 +24,13 @@
     "babel-eslint": "3.1.20",
     "babel-loader": "5.3.1",
     "chai": "3.0.0",
-    "eslint": "0.24.0",
+    "cross-env": "^5.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.1",
     "mocha": "2.2.5",
     "ng-redux": "3.0.0",
     "node-libs-browser": "0.5.2",
+    "rimraf": "^2.6.1",
     "sinon": "1.16.1",
     "sinon-as-promised": "4.0.0"
   },

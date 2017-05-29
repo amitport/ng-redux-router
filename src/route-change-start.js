@@ -1,4 +1,4 @@
-import { ROUTE_CHANGE_START } from './action-types';
+import {ROUTE_CHANGE_START} from './action-types';
 
 /**
  * @param {Object} event event details
@@ -9,6 +9,6 @@ import { ROUTE_CHANGE_START } from './action-types';
 export default function onRouteChangeStart(event, next, current) {
   return {
     type: ROUTE_CHANGE_START,
-    payload: {event, next, current}
+    payload: {event, next, current},
   };
 }

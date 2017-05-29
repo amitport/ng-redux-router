@@ -1,4 +1,4 @@
-import { ROUTE_CHANGE_SUCCESS } from './action-types';
+import {ROUTE_CHANGE_SUCCESS} from './action-types';
 
 /**
  * @param {Object} event event details
@@ -9,6 +9,6 @@ import { ROUTE_CHANGE_SUCCESS } from './action-types';
 export default function onRouteChangeSuccess(event, current, previous) {
   return {
     type: ROUTE_CHANGE_SUCCESS,
-    payload: {event, current, previous}
+    payload: {event, current, previous},
   };
 }

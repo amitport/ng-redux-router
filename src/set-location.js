@@ -1,4 +1,4 @@
-import { SET_LOCATION } from './action-types';
+import {SET_LOCATION} from './action-types';
 
 /**
  * This action create will trigger a $state.go in the UiRouter Middleware.
@@ -12,6 +12,6 @@ import { SET_LOCATION } from './action-types';
 export default function setLocation(url) {
   return {
     type: SET_LOCATION,
-    payload: url
+    payload: url,
   };
 }

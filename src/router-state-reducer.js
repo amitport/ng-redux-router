@@ -1,10 +1,10 @@
-import { ROUTE_CHANGE_SUCCESS } from './action-types';
+import {ROUTE_CHANGE_SUCCESS} from './action-types';
 
 const INITIAL_STATE = {
   currentState: {},
   currentParams: {},
   prevState: {},
-  prevParams: {}
+  prevParams: {},
 };
 
 /**

@@ -1,4 +1,4 @@
-import { ROUTE_CHANGE_ERROR } from './action-types';
+import {ROUTE_CHANGE_ERROR} from './action-types';
 
 /**
  * @param {Object} event event details
@@ -10,6 +10,6 @@ import { ROUTE_CHANGE_ERROR } from './action-types';
 export default function onRouteChangeError(event, current, previous, rejection) {
   return {
     type: ROUTE_CHANGE_ERROR,
-    payload: {event, current, previous, rejection}
+    payload: {event, current, previous, rejection},
   };
 }

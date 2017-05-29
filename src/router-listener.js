@@ -12,6 +12,6 @@ export default function routerListener($rootScope, ngRouteChangeActions) {
 
 routerListener.$inject = [
   '$rootScope',
-  'ngRouteChangeActions'
+  'ngRouteChangeActions',
 ];
 
